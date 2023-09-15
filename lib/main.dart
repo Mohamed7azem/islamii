@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:islamii/home/homescreen.dart';
+import 'package:islamii/home/quran/sura_details_screen.dart';
 import 'package:islamii/mytheme.dart';
 
 void main (){
@@ -14,6 +15,8 @@ class MyApp extends StatelessWidget{
      initialRoute: HomeScreen.RouteName,
      routes: {
        HomeScreen.RouteName: (context) => HomeScreen(),
+       SuraDetailsScreen.routeName:(context)=> SuraDetailsScreen(),
+
      },
      theme: MyTheme.ligthTheme,
      );

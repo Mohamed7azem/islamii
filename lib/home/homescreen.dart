@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:islamii/home/quran/hadeth_tap.dart';
+import 'package:islamii/home/hadeth/hadeth_tap.dart';
 import 'package:islamii/home/quran/quran_tap.dart';
-import 'package:islamii/home/quran/radio_tap.dart';
-import 'package:islamii/home/quran/tasbeh_tap.dart';
+import 'package:islamii/home/radio/radio_tap.dart';
+import 'package:islamii/home/tasbeh/tasbeh_tap.dart';
 import 'package:islamii/mytheme.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -29,8 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
           appBar: AppBar(
 
             title: Text("Islami",
-    style: Theme.of(context).textTheme.titleLarge,
-
+    style: MyTheme.ligthTheme.textTheme.titleLarge,
             ),
 
             ),
