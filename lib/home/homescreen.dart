@@ -6,6 +6,7 @@ import 'package:islamii/home/radio/radio_tap.dart';
 import 'package:islamii/home/tasbeh/tasbeh_tap.dart';
 import 'package:islamii/mytheme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:islamii/settings/settings_tap.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String RouteName = "routename";
@@ -65,6 +66,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     icon: ImageIcon(AssetImage("assets/images/radio.png"),),
                     label: AppLocalizations.of(context)!.radio
                 ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.settings),
+                    label: AppLocalizations.of(context)!.settings
+                ),
               ],
             ),
           ),
@@ -76,6 +81,6 @@ body: tabs[selectedIndex],
     );
   }
   List<Widget> tabs = [
-    QuranTap(),HadethTap(),TasbehTap(),RadioTap(),
+    QuranTap(),HadethTap(),TasbehTap(),RadioTap(),SettingsTap(),
   ];
 }
